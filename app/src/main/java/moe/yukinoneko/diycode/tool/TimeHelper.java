@@ -32,10 +32,6 @@ public class TimeHelper {
 
     private static PrettyTime prettyTime = new PrettyTime();
 
-    private TimeHelper() {
-
-    }
-
     public static String format(Date date) {
         return prettyTime.format(date).replace(" 前", "前");
     }
