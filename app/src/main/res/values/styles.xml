@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.TransparentStatusBar" parent="AppTheme"/>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme"/>
+
+    <style name="AppTheme.WithDrawer" parent="AppTheme.TransparentStatusBar"/>
+
+    <style name="Widget.DiyCode" parent="android:Widget"/>
+
+    <style name="Widget.DiyCode.FeedName">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Widget.DiyCode.FeedNodeName" parent="Widget.DiyCode.FeedName">
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="Widget.DiyCode.FeedTime" parent="Widget.DiyCode.FeedNodeName">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.DiyCode.FeedTitle">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Widget.DiyCode.FeedHost" parent="Widget.DiyCode.FeedNodeName">
+        <item name="android:background">#F4F4F4</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">5dp</item>
+        <item name="drawableRightCompat">@drawable/ic_link</item>
+    </style>
+
+    <style name="Widget.DiyCode.UserAvatar">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="riv_border_color">#20000000</item>
+        <item name="riv_border_width">1dp</item>
+        <item name="riv_corner_radius">3dp</item>
+    </style>
+
+    <style name="Widget.DiyCode.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="Widget.DiyCode.ActionButton">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="Widget.DiyCode.HighLightTitle"/>
+
+    <style name="Widget.DiyCode.HighLightTitle.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.DiyCode.CardEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textColorHint">@color/tertiaryText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CollapsingToolbarTitle" parent="Widget.Design.CollapsingToolbar">
+        <item name="android:textColor">@color/navigation</item>
+    </style>
+
+    <style name="CollapsingToolbarTitle.Transparent" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+</resources>

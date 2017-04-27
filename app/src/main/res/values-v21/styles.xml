@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme.TransparentStatusBar" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.WithDrawer" parent="AppTheme.TransparentStatusBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+</resources>

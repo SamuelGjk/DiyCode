@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/appbar"/>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:msv_emptyView="@layout/empty_view"
+        app:msv_errorView="@layout/error_view"
+        app:msv_loadingView="@layout/loading_view"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/category"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="3dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_node"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                app:layout_top="prev.bottom + 3dp"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/title"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="3dp"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_title"
+                style="@style/Widget.DiyCode.CardEditText"
+                android:hint="@string/please_input_title"
+                android:inputType="text"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/link"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="3dp"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_link"
+                style="@style/Widget.DiyCode.CardEditText"
+                android:hint="@string/please_input_link"
+                android:inputType="text"/>
+        </LinearLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

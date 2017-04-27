@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">@android:color/white</color>
+    <color name="colorPrimary">#F5F5F5</color>
+    <color name="colorPrimaryDark">#E0E0E0</color>
+    <color name="colorAccent">#DB3937</color>
+    <color name="background">#FAFAFA</color>
+    <color name="card">@color/white</color>
+    <color name="primaryText">#D8000000</color>
+    <color name="secondaryText">#8C000000</color>
+    <color name="tertiaryText">#66000000</color>
+    <color name="divider">#19000000</color>
+    <color name="checked">@color/colorAccent</color>
+    <color name="unchecked">#CCCCCC</color>
+    <color name="navigation">#62646C</color>
+</resources>

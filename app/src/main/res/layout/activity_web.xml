@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar"/>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:background="@color/background"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/progressbar"
+        style="@style/NumberProgressBar_Funny_Orange"
+        android:layout_below="@id/appbar"
+        app:progress_reached_bar_height="2dp"
+        app:progress_reached_color="@color/colorAccent"
+        app:progress_text_size="0sp"
+        app:progress_text_visibility="invisible"
+        app:progress_unreached_bar_height="2dp"/>
+</RelativeLayout>

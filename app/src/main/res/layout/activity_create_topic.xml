@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/appbar"/>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multi_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:msv_emptyView="@layout/empty_view"
+        app:msv_errorView="@layout/error_view"
+        app:msv_loadingView="@layout/loading_view"
+        app:msv_viewState="loading">
+
+        <com.github.mmin18.widget.FlexLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/node"
+                app:layout_top="prev.bottom"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                app:layout_top="prev.bottom + 3dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_node"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                app:layout_left="prev.right + 20dp"
+                app:layout_top="prev.top"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/title"
+                app:layout_top="prev.bottom + 10dp"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_title"
+                style="@style/Widget.DiyCode.CardEditText"
+                android:hint="@string/please_input_title"
+                android:inputType="text"
+                app:layout_top="prev.bottom + 3dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Widget.DiyCode.HighLightTitle.Small"
+                android:text="@string/content"
+                app:layout_top="prev.bottom + 10dp"/>
+
+            <com.github.mmin18.widget.FlexLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                app:layout_bottom="100%"
+                app:layout_top="prev.bottom + 3dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edit_content"
+                    style="@style/Widget.DiyCode.CardEditText"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/please_input_content"
+                    android:inputType="textMultiLine"
+                    app:layout_bottom="next.top - 10dp"
+                    app:layout_top="0"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/button_preview"
+                    style="@style/Widget.DiyCode.ActionButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_bottom="100% - 10dp"
+                    app:layout_right="100% - 10dp"
+                    app:srcCompat="@drawable/ic_preview"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/button_pick_image"
+                    style="@style/Widget.DiyCode.ActionButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:layout_bottom="prev.bottom"
+                    app:layout_right="prev.left - 10dp"
+                    app:srcCompat="@drawable/ic_image"/>
+            </com.github.mmin18.widget.FlexLayout>
+        </com.github.mmin18.widget.FlexLayout>
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

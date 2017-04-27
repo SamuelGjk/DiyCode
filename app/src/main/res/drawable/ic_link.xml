@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportHeight="24"
+        android:viewportWidth="24">
+
+    <path android:pathData="M0,0 L24,0 L24,24 L0,24 Z"/>
+
+    <path
+        android:fillColor="@color/navigation"
+        android:pathData="M3.9,12 C3.9,10.29,5.29,8.9,7,8.9 L11,8.9 L11,7 L7,7 C4.24,7,2,9.24,2,12
+        S4.24,17,7,17 L11,17 L11,15.1 L7,15.1 C5.29,15.1,3.9,13.71,3.9,12 Z M8,13 L16,13
+        L16,11 L8,11 L8,13 Z M17,7 L13,7 L13,8.9 L17,8.9 C18.71,8.9,20.1,10.29,20.1,12
+        S18.71,15.1,17,15.1 L13,15.1 L13,17 L17,17 C19.76,17,22,14.76,22,12
+        S19.76,7,17,7 Z"/>
+</vector>

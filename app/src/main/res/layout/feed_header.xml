@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<com.github.mmin18.widget.FlexLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image_user_avatar"
+        style="@style/Widget.DiyCode.UserAvatar"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_name"
+        style="@style/Widget.DiyCode.FeedName"
+        app:layout_left="prev.right + 10dp"
+        app:layout_right="next.left - 20dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_node_name"
+        style="@style/Widget.DiyCode.FeedNodeName"
+        app:layout_right="100%"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_updated_at"
+        style="@style/Widget.DiyCode.FeedTime"
+        app:layout_bottom="image_user_avatar.bottom"
+        app:layout_left="text_name.left"
+        app:layout_right="100%"/>
+</com.github.mmin18.widget.FlexLayout>

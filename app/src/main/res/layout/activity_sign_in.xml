@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017 SamuelGjk <samuel.alva@outlook.com>
+  ~
+  ~ This file is part of DiyCode
+  ~
+  ~ DiyCode is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ DiyCode is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with DiyCode. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<com.github.mmin18.widget.FlexLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/button_close"
+        style="@style/Widget.DiyCode.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_centerX="50%"
+        app:layout_top="prev.bottom + 35dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_top="prev.bottom + 35dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_or_name"
+            android:inputType="textEmailAddress|text"
+            android:textColorHint="@color/tertiaryText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_top="prev.bottom + 10dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/tertiaryText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_button_sign_in"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:layout_top="prev.bottom + 35dp"/>
+</com.github.mmin18.widget.FlexLayout>
