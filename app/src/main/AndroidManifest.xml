@@ -16,15 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".module.main.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.WithDrawer">
+            android:name=".module.entry.EntryActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".module.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithDrawer"/>
 
         <activity
             android:name=".module.web.WebActivity"

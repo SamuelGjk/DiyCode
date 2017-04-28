@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "moe.yukinoneko.diycode"
         minSdkVersion 16
@@ -70,4 +70,5 @@ dependencies {
         exclude group: 'com.android.support'
     })
     compile 'com.mittsu:markedview:1.0.4@aar'
+    compile 'pub.devrel:easypermissions:0.4.0'
 }
