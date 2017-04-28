@@ -25,7 +25,7 @@
 #-renamesourcefileattribute SourceFile
 
 # model
--keep class moe.yukinoneko.diycode.bean.**{*;}
+-keep class moe.yukinoneko.diycode.bean.** { *; }
 
 # EventBus
 -keepattributes *Annotation*
@@ -69,3 +69,9 @@
     public static int v(...);
     public static int i(...);
 }
+
+-dontwarn javax.annotation.*
+-dontwarn com.squareup.picasso.*
+-dontwarn com.github.florent37.expectanim.**
+
+-keep class * extends moe.yukinoneko.diycode.mvp.BasePresenterImpl { *; }
