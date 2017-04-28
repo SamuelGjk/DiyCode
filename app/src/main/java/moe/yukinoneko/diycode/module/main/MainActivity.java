@@ -179,7 +179,7 @@ public class MainActivity extends MVPBaseActivity<MainContract.View, MainPresent
 
     @Subscribe
     public void onLogout(LogoutEvent event) {
-        imageUserAvatar.setImageResource(android.R.color.darker_gray);
+        imageUserAvatar.setImageResource(R.mipmap.default_avatar);
         textName.setText(getString(R.string.click_to_login));
     }
 

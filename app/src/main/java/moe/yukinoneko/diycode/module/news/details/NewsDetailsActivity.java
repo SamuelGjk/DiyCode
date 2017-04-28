@@ -24,10 +24,13 @@ package moe.yukinoneko.diycode.module.news.details;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -43,6 +46,7 @@ import butterknife.BindView;
 import moe.yukinoneko.diycode.R;
 import moe.yukinoneko.diycode.bean.News;
 import moe.yukinoneko.diycode.module.reply.RepliesFragment;
+import moe.yukinoneko.diycode.module.web.WebActivity;
 import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
 import moe.yukinoneko.diycode.tool.ImageLoadHelper;
 
@@ -130,7 +134,17 @@ public class NewsDetailsActivity extends MVPBaseActivity<NewsDetailsContract.Vie
         @SuppressWarnings("deprecation")
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             if (url != null) {
-                view.loadUrl(url);
+                WebActivity.launch(view.getContext(), url);
+            }
+            return true;
+        }
+
+        @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+            String url = request.getUrl().toString();
+            if (url != null) {
+                WebActivity.launch(view.getContext(), url);
             }
             return true;
         }
