@@ -295,7 +295,7 @@ public class TopicDetailsActivity extends MVPBaseActivity<TopicDetailsContract.V
         content = content.replaceAll("(<img[^>]*?)\\s+height\\s*=\\s*\\S+", "$1");
 
         // 添加点击查看大图
-        content = content.replaceAll("<img[^>]+src=\"([^\"\'\\s]+)\"[^>]*>(?!((?!</?a\\b).)*</a>)",
+        content = content.replaceAll("<img[^>]+src=\"([^\"\'\\s]+)\"[^>c]*>(?!((?!</?a\\b).)*</a>)",
                 "<img src=\"$1\" onClick=\"javascript:onWebImageClickListener.onClick('$1')\"/>");
 
         // 过滤table的内部属性

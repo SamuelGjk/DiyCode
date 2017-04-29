@@ -230,3 +230,8 @@ blockquote {
   color: #0069D6 !important
 }
 
+img.emoji {
+    width: 20px;
+    height: 20px;
+}
+

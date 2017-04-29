@@ -85,5 +85,6 @@ public class EntryActivity extends AppCompatActivity implements EasyPermissions.
 
     private void toMain() {
         startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }
