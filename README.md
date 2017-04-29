@@ -1,6 +1,9 @@
 # DiyCode
 DiyCode - 由众多开发者共同维护，致力于构建开发工程师高端交流分享社区。
 
+## 下载
+[下载地址](https://raw.githubusercontent.com/SamuelGjk/DiyCode/master/apk/diycode-release-v1.0.apk)
+
 ## 应用截图
 <p>
 <img src="/screenshots/Screenshot_0.png" width="240"/>
