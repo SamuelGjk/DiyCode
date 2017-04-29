@@ -2,9 +2,11 @@
 DiyCode - 由众多开发者共同维护，致力于构建开发工程师高端交流分享社区。
 
 ## 应用截图
+<p>
 <img src="/screenshots/Screenshot_0.png" width="240"/>
 <img src="/screenshots/Screenshot_1.png" width="240"/>
 <img src="/screenshots/Screenshot_2.png" width="240"/>
+</p>
 
 ## MinSDK
 minSdkVersion 16
