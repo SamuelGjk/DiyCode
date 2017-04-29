@@ -69,7 +69,6 @@ public class SitesFragment extends ListBaseFragment<SitesContract.View, SitesPre
         layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
-                System.out.println(adapter.getItem(position) instanceof Sites);
                 return (adapter.getItem(position) instanceof Sites.Site) ? 1 : 2;
             }
         });
