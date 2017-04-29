@@ -74,4 +74,3 @@
 -dontwarn com.squareup.picasso.*
 -dontwarn com.github.florent37.expectanim.**
 
--keep class * extends moe.yukinoneko.diycode.mvp.BasePresenterImpl { *; }

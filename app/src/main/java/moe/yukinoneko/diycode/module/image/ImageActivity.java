@@ -34,7 +34,7 @@ import com.github.chrisbanes.photoview.PhotoView;
 
 import butterknife.BindView;
 import moe.yukinoneko.diycode.R;
-import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
+import moe.yukinoneko.diycode.base.BaseActivity;
 import moe.yukinoneko.diycode.tool.ImageLoadHelper;
 
 
@@ -43,7 +43,7 @@ import moe.yukinoneko.diycode.tool.ImageLoadHelper;
  * 邮箱 784787081@qq.com
  */
 
-public class ImageActivity extends MVPBaseActivity<ImageContract.View, ImagePresenter> implements ImageContract.View {
+public class ImageActivity extends BaseActivity {
     private static final String EXTRA_IMAGE_URL = "extra_image_url";
 
     @BindView(R.id.photo_view) PhotoView photoView;

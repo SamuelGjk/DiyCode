@@ -29,7 +29,7 @@ import com.mittsu.markedview.MarkedView;
 
 import butterknife.BindView;
 import moe.yukinoneko.diycode.R;
-import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
+import moe.yukinoneko.diycode.base.BaseActivity;
 
 
 /**
@@ -37,7 +37,7 @@ import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
  * 邮箱 784787081@qq.com
  */
 
-public class MarkdownActivity extends MVPBaseActivity<MarkdownContract.View, MarkdownPresenter> implements MarkdownContract.View {
+public class MarkdownActivity extends BaseActivity {
     private static final String EXTRA_MD_TEXT = "extra_md_text";
 
     @BindView(R.id.md_view) MarkedView mdView;

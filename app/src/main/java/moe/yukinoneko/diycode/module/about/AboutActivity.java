@@ -31,7 +31,7 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.OnClick;
 import moe.yukinoneko.diycode.R;
-import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
+import moe.yukinoneko.diycode.base.BaseActivity;
 import moe.yukinoneko.diycode.tool.Tools;
 
 
@@ -40,7 +40,7 @@ import moe.yukinoneko.diycode.tool.Tools;
  * 邮箱 784787081@qq.com
  */
 
-public class AboutActivity extends MVPBaseActivity<AboutContract.View, AboutPresenter> implements AboutContract.View {
+public class AboutActivity extends BaseActivity {
 
     @BindView(R.id.text_app_version) AppCompatTextView textAppVersion;
 

@@ -30,11 +30,11 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
 import moe.yukinoneko.diycode.R;
+import moe.yukinoneko.diycode.base.BaseFragment;
 import moe.yukinoneko.diycode.event.OpenDrawerEvent;
 import moe.yukinoneko.diycode.event.SaveUserEvent;
 import moe.yukinoneko.diycode.module.reply.RepliesFragment;
 import moe.yukinoneko.diycode.module.topic.TopicsFragment;
-import moe.yukinoneko.diycode.mvp.MVPBaseFragment;
 import moe.yukinoneko.diycode.tool.UserHelper;
 
 /**
@@ -42,7 +42,7 @@ import moe.yukinoneko.diycode.tool.UserHelper;
  * 邮箱 784787081@qq.com
  */
 
-public class MyXXFragment extends MVPBaseFragment<MyXXContract.View, MyXXPresenter> implements MyXXContract.View {
+public class MyXXFragment extends BaseFragment {
 
     private static final String XX_TYPE = "xx_type";
 

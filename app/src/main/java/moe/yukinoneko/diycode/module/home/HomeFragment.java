@@ -39,17 +39,17 @@ import org.greenrobot.eventbus.EventBus;
 import butterknife.BindView;
 import butterknife.OnClick;
 import moe.yukinoneko.diycode.R;
+import moe.yukinoneko.diycode.base.BaseFragment;
 import moe.yukinoneko.diycode.event.ListToTopEvent;
 import moe.yukinoneko.diycode.event.OpenDrawerEvent;
 import moe.yukinoneko.diycode.misc.FragmentBackHandler;
+import moe.yukinoneko.diycode.module.login.LoginActivity;
 import moe.yukinoneko.diycode.module.news.NewsFragment;
 import moe.yukinoneko.diycode.module.news.create.CreateNewsActivity;
 import moe.yukinoneko.diycode.module.notification.NotificationsActivity;
-import moe.yukinoneko.diycode.module.login.LoginActivity;
 import moe.yukinoneko.diycode.module.site.SitesFragment;
 import moe.yukinoneko.diycode.module.topic.TopicsFragment;
 import moe.yukinoneko.diycode.module.topic.create.CreateTopicActivity;
-import moe.yukinoneko.diycode.mvp.MVPBaseFragment;
 import moe.yukinoneko.diycode.tool.ToastHelper;
 import moe.yukinoneko.diycode.tool.UserHelper;
 
@@ -57,8 +57,7 @@ import moe.yukinoneko.diycode.tool.UserHelper;
  * Created by SamuelGjk on 2017/3/22.
  */
 
-public class HomeFragment extends MVPBaseFragment<HomeContract.View, HomePresenter>
-        implements HomeContract.View, Toolbar.OnMenuItemClickListener, FragmentBackHandler {
+public class HomeFragment extends BaseFragment implements Toolbar.OnMenuItemClickListener, FragmentBackHandler {
 
     @BindView(R.id.search_view) MaterialSearchView searchView;
     @BindView(R.id.tab_layout) TabLayout tabLayout;

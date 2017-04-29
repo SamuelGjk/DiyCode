@@ -44,10 +44,10 @@ import java.util.Locale;
 
 import butterknife.BindView;
 import moe.yukinoneko.diycode.R;
+import moe.yukinoneko.diycode.base.BaseActivity;
 import moe.yukinoneko.diycode.bean.News;
 import moe.yukinoneko.diycode.module.reply.RepliesFragment;
 import moe.yukinoneko.diycode.module.web.WebActivity;
-import moe.yukinoneko.diycode.mvp.MVPBaseActivity;
 import moe.yukinoneko.diycode.tool.ImageLoadHelper;
 
 
@@ -56,7 +56,7 @@ import moe.yukinoneko.diycode.tool.ImageLoadHelper;
  * 邮箱 784787081@qq.com
  */
 
-public class NewsDetailsActivity extends MVPBaseActivity<NewsDetailsContract.View, NewsDetailsPresenter> implements NewsDetailsContract.View {
+public class NewsDetailsActivity extends BaseActivity {
 
     private static final String EXTRA_NEWS = "extra_news";
 
