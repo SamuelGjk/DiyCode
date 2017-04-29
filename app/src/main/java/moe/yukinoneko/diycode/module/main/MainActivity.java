@@ -189,10 +189,11 @@ public class MainActivity extends MVPBaseActivity<MainContract.View, MainPresent
         switch (item.getItemId()) {
             case R.id.navigation_home:
                 switchFragment(HOME);
-                break;
+                return true;
             case R.id.navigation_post:
                 if (UserHelper.isLogin()) {
                     switchFragment(POST);
+                    return true;
                 } else {
                     LoginActivity.launch(this);
                 }
@@ -200,6 +201,7 @@ public class MainActivity extends MVPBaseActivity<MainContract.View, MainPresent
             case R.id.navigation_favorite:
                 if (UserHelper.isLogin()) {
                     switchFragment(FAVORITE);
+                    return true;
                 } else {
                     LoginActivity.launch(this);
                 }
@@ -207,6 +209,7 @@ public class MainActivity extends MVPBaseActivity<MainContract.View, MainPresent
             case R.id.navigation_reply:
                 if (UserHelper.isLogin()) {
                     switchFragment(REPLY);
+                    return true;
                 } else {
                     LoginActivity.launch(this);
                 }
@@ -215,6 +218,6 @@ public class MainActivity extends MVPBaseActivity<MainContract.View, MainPresent
                 startActivity(new Intent(this, AboutActivity.class));
                 return false;
         }
-        return true;
+        return false;
     }
 }
