@@ -22,6 +22,7 @@ minSdkVersion 16
 [drakeet - 项目参考, 图片资源的使用](https://github.com/drakeet)  
 [plusend - 项目参考](https://github.com/plusend)  
 [GcsSloop - 项目参考](https://github.com/GcsSloop)  
+[Android安全系列之：如何在native层保存关键信息](http://www.jianshu.com/p/2576d064baf1)
 
 ## 联系我
 E-MAIL: samuel.alva@outlook.com  
