@@ -17,6 +17,9 @@ minSdkVersion 16
 ## 注意
 此项目无法直接编译使用, 因为使用了签名验证, 请到 [native-secret.cpp](https://github.com/SamuelGjk/DiyCode/blob/master/app/src/main/cpp/native-secret.cpp) 中配置 clientId, secret 和应用签名
 
+## TODO
+1. 使用 Service 去发布话题、分享、评论，不阻塞用户界面
+
 ## 鸣谢
 [DiyCode - API](https://www.diycode.cc)  
 [drakeet - 项目参考, 图片资源的使用](https://github.com/drakeet)  
